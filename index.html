@@ -5,13 +5,11 @@
         <!--
             practice with how to comment -- can add commens here
         -->
+        <link rel="stylesheet" href="css/site.css" />
     </head>
     <body>
+        <div class="container">
         <header>
-            <div>Github hub</div>
-            <div>I am <strong>practicing</strong> writing <em>html</em>.Here is 
-                the <a href="http://github.com">Github</a> link to access various 
-                projects.</div>
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
@@ -19,14 +17,20 @@
                     <li><a href="/about.html">About</a></li>
                 </ul>
             </nav>
+            <div>Github hub</div>
+            <div>I am <strong>practicing</strong> writing <em>html</em>.Here is 
+                the <a href="http://github.com">Github</a> link to access various 
+                projects.</div>
         </header>
-        <section>
+        <section id="main">
         <p>Here is just some more <span>text that</span> we can practice with HTML.</p>
-        <form action="http://wilder.azurewebsites.net/echo" method="POST">
+        <form action="http://wilder.azurewebsites.net/echo" method="POST" 
+        class="bordered-image simple-form">
             <label for="searchPhrase">Search Phrase:</label>
-            <input name="searchPhrase" id="searchPhrase" /><br/>
+            <input type="searchPhrase" id="searchPhrase" /><br/>
             <input type="checkbox" name="useStars" id="useStars" checked="true" /> 
             <label for="useStars" >Use Stars?</label><br/>
+            <label for="langChoice">Language:</label>
             <select name="langChoice" id="langChoice">
                 <option>All</option>
                 <option>JavaScript</option>
@@ -37,9 +41,13 @@
             <br/>
             <input type="submit" value="search" />
         </form>
+        <div id="results" class="bordered-image">
+            This is where results will live...eventually!
+        </div>
         </section>
         <footer>
             &copy; 2021 erica basak
         </footer>
+        </div>
     </body>
 </html>
