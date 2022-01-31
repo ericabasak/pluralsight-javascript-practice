@@ -41,3 +41,15 @@ if(randomNumber === 0) {
 };
 
 // -----------------------------------------
+
+let favFruit = "apple";
+
+alert("Your favorite fruit is a" + " " + favFruit);
+
+prompt("It that correct?")
+
+if(favFruit === "banana"){
+    alert()
+} else if (favFruit === "watermelon"){
+    alert()
+}
